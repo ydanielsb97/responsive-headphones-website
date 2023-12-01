@@ -606,9 +606,250 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px){
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .home__img{
+    width: 180px;
+  }
+
+  .home__title{
+    font-size: 8rem;
+  }
+
+  .model__img{
+    width: 220px;
+  }
+  .model__tooltip-text{
+    font-size: var(--smaller-font-size);
+    transform: translate(42px, -40px);
+  }
+  .model__tooltip-1 .model__tooltip-text,
+  .model__tooltip-2 .model__tooltip-text{
+    transform: translate(40px, -40px) scaleX(-1);
+  }
+  .model__tooltip-1{
+    top: 3rem;
+    left: 4rem; 
+  }
+  .model__tooltip-2{
+    top: 0;
+  }
+  .model__tooltip-3{
+    bottom: 2rem;
+    left: 3rem
+  }
+  .model__tooltip-4{
+    right: 4rem;
+    bottom: 6rem;
+  }
+
+  .sponsor__container {
+    gap: 4rem 2rem;
+  }
+}
 
 
 /* For medium devices */
+@media screen and (min-width: 576px){
+  .about__container{
+    grid-template-columns: 380px;
+    justify-content: center;
+  }
 
+  .footer__data{
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3rem;
+  }
+  .footer__group{
+    grid-column: initial;
+  }
+  .footer__social{
+    justify-content: initial;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .home__img{
+    width: 320px;
+  }
+  .home__title{
+    font-size: 16rem;
+    top: -4rem
+  }
+  .home__social{
+    top: 0;
+    bottom: 0;
+    align-content: center;
+  }
+
+  .sponsor__container{
+    grid-template-columns: repeat(4, max-content)
+  }
+
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  .footer__data{
+    column-gap: 4rem;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 1150px) {
+  .container{
+    margin-inline: auto;
+  }
+
+  .section{
+    padding-block: 7rem 2rem;
+  }
+  .section__title{
+    font-size: var(--h1-font-size);
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4.5rem;
+  }
+  
+  .home__container{
+    position: relative;
+  }
+  .home__img{
+    width: 500px;
+  }
+  .home__title{
+    font-size: var(--biggest-font-size);
+    top: -6.5rem;
+    column-gap: 1rem;
+  }
+  .home__tooltip{
+    right: 6rem;
+  }
+  .home__tooltip-img{
+    width: initial;
+  }
+  .home__tooltip-text{
+    font-size: var(--normal-font-size);
+    transform: translate(82px, -52px);
+  }
+  .home__social-text{
+    font-size: var(--normal-font-size);
+  }
+  .home__social-links{
+    row-gap: 1rem;
+  }
+  .home__social-link{
+    font-size: 1.5rem;
+  }
+  .home__button{
+    position: absolute;
+    bottom: 4.5rem;
+  }
+
+  .about__container{
+    grid-template-columns: 400px 500px;
+    align-items: center;
+    column-gap: 5rem;
+  }
+  .about__data .section__title,
+  .about__data {
+    text-align: initial;
+  }
+  .about__description{
+    margin-bottom: 3.5rem;
+  }
+  .about__img{
+    width: 500px;
+  }
+  
+  .favorite__container{
+    max-width: 1100px;
+    margin-inline: auto;
+  }
+  .favorite__img{
+    width: 500px;
+  }
+
+  .model__img{
+    width: 500px;
+  }
+  .model__tooltip-img{
+    width: initial;
+  }
+  .model__tooltip-text{
+    font-size: var(--normal-font-size);
+    padding: .5rem 1.25rem;
+    transform: translate(82px, -56px);
+  }
+  .model__tooltip-1{
+    top: 7.5rem;
+    left: 8.5rem;
+  }
+  .model__tooltip-1 .model__tooltip-text{
+    transform: translate(82px, -56px) scaleX(-1);
+  }
+  .model__tooltip-2{
+    transform: initial;
+    top: 6.5rem;
+    right: -1.5rem;
+  }
+  .model__tooltip-2 .model__tooltip-text{
+    transform: translate(82px, -56px);
+  }
+  .model__tooltip-3{
+    transform: scaleX(-1);
+    left: 0;
+    bottom: 6rem;
+  }
+  .model__tooltip-3 .model__tooltip-text{
+    transform: translate(82px, -56px) scaleX(-1);
+  }
+  .model__tooltip-4{
+    bottom: 10rem;
+    right: 7rem;
+  }
+
+  .sponsor__container{
+    column-gap: 7.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .footer{
+    padding-bottom: 3rem;
+  }
+  .footer__data{
+    column-gap: 6rem;
+  }
+  .footer__form{
+    grid-template-columns: 1fr max-content;
+    background-color: var(--container-color);
+    padding: .5rem;
+    border-radius: 4rem;
+    width: 380px;
+  }
+  .footer__social{
+    column-gap: 1.5rem;
+  }
+  .footer__social-links{
+    font-size: 1.5rem;
+  }
+  .footer__copy{
+    margin-top: 7.5rem;
+  }
+
+  .scrollup{
+    right: 3rem;
+  }
+}
