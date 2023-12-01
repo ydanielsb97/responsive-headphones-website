@@ -71,16 +71,18 @@ JBL
 
 footer__title .footer__link
 Products
- Headphones
- Earphones
- Earbuds
- Accesories
+
+Headphones
+Earphones
+Earbuds
+Accesories
 
 Support
- Product Help
- Register
- Updates
- Provides
+
+Product Help
+Register
+Updates
+Provides
 
 .footer__input placeholder
 Email
